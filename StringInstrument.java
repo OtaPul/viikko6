@@ -13,7 +13,11 @@ public abstract class StringInstrument extends Instrument {
     }
 
     public void tune() {
-        System.out.println(manufacturer + " soittimesta viritettiin " + stringCount + " kieltä!");
+        System.out.println(getManufacturer() + " soittimesta viritettiin " + stringCount + " kieltä!");
+    }
+
+    @Override
+    public String getDetails() {
+        return "Valmistaja: " + getManufacturer() + ", Hinta: " + getPrice() + "e, Kieliä: " + stringCount;
     }
 }
-
