@@ -1,4 +1,3 @@
-// Instrument.java
 package main;
 
 public abstract class Instrument {
