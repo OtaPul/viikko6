@@ -1,3 +1,5 @@
+package main;
+
 public abstract class Instrument {
     protected String manufacturer;
     protected int price;
@@ -7,7 +9,13 @@ public abstract class Instrument {
         this.price = price;
     }
 
-    public String getDetails() {
-        return "Valmistaja: " + manufacturer + ", Hinta: " + price + "e";
+    public String getManufacturer() {
+        return manufacturer;
     }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public abstract String getDetails();
 }
