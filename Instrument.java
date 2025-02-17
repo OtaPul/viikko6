@@ -1,8 +1,9 @@
+// Instrument.java
 package main;
 
 public abstract class Instrument {
-    protected String manufacturer;
-    protected int price;
+    private String manufacturer;
+    private int price;
 
     public Instrument(String manufacturer, int price) {
         this.manufacturer = manufacturer;
