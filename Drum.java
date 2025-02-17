@@ -6,11 +6,11 @@ public class Drum extends Instrument {
     }
 
     public void playBeat() {
-        System.out.println(manufacturer + " rummut soittavat komppia!");
+        System.out.println(getManufacturer() + " rummut soittavat komppia!");
     }
 
     @Override
     public String getDetails() {
-        return "Valmistaja: " + manufacturer + ", Hinta: " + price + "e (rummut)";
+        return "Valmistaja: " + getManufacturer() + ", Hinta: " + getPrice() + "e";
     }
 }
